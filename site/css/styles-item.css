@@ -1,0 +1,52 @@
+﻿.container {
+    margin: 0 auto;
+    width: 940px;
+    padding: 0 10px;
+}
+
+.main-layout {
+    display: flex;
+}
+
+.main-navigation {
+    display: flex;
+    width: 780px;
+    margin-right: 20px;
+}
+
+.user-block {
+    width: 140px;
+}
+
+.logo {
+    width: 140px;
+    margin-right: 10px;
+}
+
+.item-layout {
+    display: flex;
+}
+
+.item-info {
+    display: flex;    
+    justify-content: space-between;
+}
+
+.footer-layout {
+    display: flex;
+}
+
+.footer-contacts {
+    width: 320px;
+    margin-right: 60px;
+}
+
+.footer-social {
+    width: 180px;
+    margin-left: 10px;
+}
+
+.footer-copyright {
+    width: 160px;
+    margin-left: auto;
+}

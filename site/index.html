@@ -3,15 +3,18 @@
 <head>
     <meta charset="utf-8" />
     <title>Барбершоп Бородинский</title>
+    <link href="./css/normalize.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=cyrillic" rel="stylesheet">
+    <link href="./css/styles.css" rel="stylesheet" />
 </head>
 <body>
     <header class="main-header">
-        <div class="container">
+        <div class="container clearfix">
             <nav class="main-navigation">
                 <ul>
                     <li><a href="#">Информация</a></li>
                     <li><a href="#">Новости</a></li>
-                    <li><a href="#">Прайс-лист</a></li>
+                    <li><a href="price.html">Прайс-лист</a></li>
                     <li><a href="#">Магазин</a></li>
                     <li><a href="#">Контакты</a></li>
                 </ul>
@@ -23,9 +26,9 @@
     </header>
     <main class="container">
         <div class="index-logo">
-            <img src="img/index-logo.png" width="500" height="500" alt="Барбершоп Бородинский">
+            <img src="img/index-logo.png" width="368" height="204" alt="Барбершоп Бородинский">
         </div>
-        <section class="features">
+        <section class="features clearfix">
             <div class="features-item">
                 <b class="features-name">Быстро</b>
                 <p>МЫ ДЕЛАЕМ СВОЮ РАБОТУ БЫСТРО! ДВА ЧАСА ПРОЛЕТЯТ НЕЗАМЕТНО И ВЫ — СЧАСТЛИВЫЙ ОБЛАДЕТЕЛЬ СТИЛЬНОЙ СТРИЖКИ-МИНУТКИ!</p>
@@ -39,7 +42,7 @@
                 <p>НАШИ МАСТЕРА — ПРОФЕССИОНАЛЫ СВОЕГО ДЕЛА И НЕ МОГУТ СТОИТЬ ДЕШЕВО. К ТОМУ ЖЕ, РАЗВЕ ЦЕНА НЕ ДАЕТ ОПРЕДЕЛЕНЫЙ СТАТУС?</p>
             </div>
         </section>
-        <div class="index-content">
+        <div class="index-content clearfix">
             <div class="index-content-left">
                 <h2 class="index-content-title">НОВОСТИ</h2>
                 <ul class="news-preview">
@@ -56,14 +59,16 @@
             </div>
             <div class="index-content-right">
                 <h2 class="index-content-title">ФОТОГАЛЕРЕЯ</h2>
-                <figure class="gallery-content">
-                    <img src="img/photo-1.jpg" width="300" height="200" alt=""/>
-                </figure>
-                <button class="btn gallery-prev" type="button">назад</button>
-                <button class="btn gallery-next" type="button">вперед</button>
+                <div class="gallery">
+                    <figure class="gallery-content">
+                        <img src="img/photo-1.jpg" width="286" height="164" alt="" />
+                    </figure>
+                    <button class="btn gallery-prev disabled" type="button">назад</button>
+                    <button class="btn gallery-next" type="button">вперед</button>
+                </div>
             </div>
         </div>
-        <div class="index-content">
+        <div class="index-content clearfix">
             <div class="index-content-left">
                 <h2 class="index-content-title">Как проехать</h2>
                 <p>
@@ -87,18 +92,18 @@
                     <input type="text" name="time" value="" placeholder="Время">
                     <input type="text" name="name" value="" placeholder="Ваше имя">
                     <input type="tel" name="phone" value="" placeholder="Телефон">
+                    <button class="btn" type="submit">Отправить</button>
                 </form>
-                <button class="btn" type="submit">Отправить</button>
             </div>
         </div>
     </main>
     <footer class="main-footer">
-        <div class="container">
+        <div class="container clearfix">
             <div class="footer-contacts">
                 <p>
                     БАРБЕРШОП «БОРОДИНСКИЙ»
-                    АДРЕС: Г. САНКТ-ПЕТЕРБУРГ, УЛ. Б. КОНЮШЕННАЯ, Д. 19/8
-                    <a href="#">КАК НАС НАЙТИ?</a>
+                    АДРЕС: Г. САНКТ-ПЕТЕРБУРГ, УЛ. Б. КОНЮШЕННАЯ, Д. 19/8 <br>
+                    <a href="#">КАК НАС НАЙТИ?</a><br>
                     ТЕЛЕФОН: +7 (495) 666-02-66
                 </p>
             </div>
@@ -109,7 +114,7 @@
                 <a class="social-btn social-btn-inst" href="#">Инстаграмм</a>
             </div>
             <div class="footer-copyright">
-                <p>Разработано</p>
+                <p>Разработано:</p>
                 <a class="btn" href="#">htmlacademy.ru</a>
             </div>
         </div>

@@ -3,16 +3,17 @@
 <head>
     <meta charset="utf-8" />
     <title></title>
+    <link rel="stylesheet" href="css/styles-item.css"/>
 </head>
 <body>
     <header class="item-header">
-        <div class="container">
+        <div class="main-layout container">
             <nav class="main-navigation">
-                <a href="index.html"><img src="img/logo.png" width="100" height="50"></a>
+                <a class="logo" href="index.html"><img src="img/logo.png" width="100" height="50"></a>
                 <ul>
                     <li><a href="#">ИНФОРМАЦИЯ</a></li>
                     <li><a href="#">НОВОСТИ</a></li>
-                    <li><a href="#">ПРАЙС-ЛИСТ</a></li>
+                    <li><a href="price.html">ПРАЙС-ЛИСТ</a></li>
                     <li><a href="#">МАГАЗИН</a></li>
                     <li><a href="#">КОНТАКТЫ</a></li>
                 </ul>
@@ -24,47 +25,54 @@
     </header>
     <main class="container">
         <h1>Набор для путешествий «Baxter of California»</h1>
-        <ul>
-            <li><a href="#">ГЛАВНАЯ</a></li>
-            <li><a href="#">МАГАЗИН</a></li>
-            <li><a href="#">СРЕДСТВА ДЛЯ УХОДА</a></li>
-            <li><a href="#">Набор для путешествий «Baxter of California»</a></li>
-        </ul>
-        <figure class="gallery-item">
-            <p><img class="gallery-item" src="img/item1.png" width="200" height="150"></p>
-            <img class="gallery-item" src="img/item2.png" width="100" height="50">
-            <img class="gallery-item" src="img/item3.png" width="100" height="50">
-            <img class="gallery-item" src="img/item4.png" width="100" height="50">
-        </figure>
-        <div class="item-available">есть в наличии</div>
-        <div class="item-article">Артикул: dexter-ae</div>
-        <div>
-            <p class="item-description">
-                Travel Kit – необходимый аксессуар во время любого путешествия.
-                В аккуратной кожаной сумке находится все, что нужно для бритья и ухода за кожей во время рабочей поездки или отдыха:
-                средство для умывания, увлажняющий крем, крем для бритья, крем после бритья, шампунь.
-                Набор также может стать отличным подарком.
-            </p>
-        </div>
-        
-        <div class="btn price">
-            <span class="item-price">2 900 РУБ.</span>
-            <a href="#" class="btn">КУПИТЬ</a>
-        </div>
-
-        <div class="item-content">
-            <h3 class="item-content-title">В набор входят:</h3>
+        <nav>
             <ul>
-                <li>Средство для умывания (50 мл)</li>
-                <li>Увлажняющий крем (50 мл)</li>
-                <li>Крем для бритья (50 мл)</li>
-                <li>Крем после бритья, шампунь (50 мл)</li>
-                <li>Удобная кожаная косметичка</li>
+                <li><a href="#">ГЛАВНАЯ</a></li>
+                <li><a href="#">МАГАЗИН</a></li>
+                <li><a href="#">СРЕДСТВА ДЛЯ УХОДА</a></li>
+                <li><a href="#">Набор для путешествий «Baxter of California»</a></li>
             </ul>
+        </nav>
+        <div class="item-layout item">
+            <div class="left-content">
+                <figure class="gallery-item">
+                    <p><img class="gallery-item" src="img/item1.png" width="200" height="150"></p>
+                    <img class="gallery-item" src="img/item2.png" width="100" height="50">
+                    <img class="gallery-item" src="img/item3.png" width="100" height="50">
+                    <img class="gallery-item" src="img/item4.png" width="100" height="50">
+                </figure>
+            </div>
+            <div class="right-content">
+                <div class="item-info">
+                    <div class="item-available">есть в наличии</div>
+                    <div class="item-article">Артикул: dexter-ae</div>
+                </div>
+                <section class="item-description">
+                    Travel Kit – необходимый аксессуар во время любого путешествия.
+                    В аккуратной кожаной сумке находится все, что нужно для бритья и ухода за кожей во время рабочей поездки или отдыха:
+                    средство для умывания, увлажняющий крем, крем для бритья, крем после бритья, шампунь.
+                    Набор также может стать отличным подарком.
+                </section>                
+                <div class="btn price">
+                    <span class="item-price">2 900 РУБ.</span>
+                    <a href="#" class="btn">КУПИТЬ</a>
+                </div>
+
+                <div class="item-contents">
+                    <h3 class="item-content-title">В набор входят:</h3>
+                    <ul>
+                        <li>Средство для умывания (50 мл)</li>
+                        <li>Увлажняющий крем (50 мл)</li>
+                        <li>Крем для бритья (50 мл)</li>
+                        <li>Крем после бритья, шампунь (50 мл)</li>
+                        <li>Удобная кожаная косметичка</li>
+                    </ul>
+                </div>
+            </div>
         </div>
     </main>
     <footer class="item-footer">
-        <div class="container">
+        <div class="footer-layout container">
             <div class="footer-contacts">
                 <p>
                     БАРБЕРШОП «БОРОДИНСКИЙ»
