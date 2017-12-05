@@ -10,6 +10,11 @@
     background: #000 url("../img/body-bg.png") no-repeat center top;
 }
 
+.inner-page {
+    color: #000;
+    background: #faf7f4 url("..img/pattern-white.jpg") repeat;
+}
+
 .clearfix {
     content: "";
     display: table;
@@ -20,6 +25,10 @@
     margin-bottom: 60px;
     color: #fff;
     background-color: #000;
+}
+
+.inner-page .main-header {
+    margin-bottom: 55px;
 }
 
 .container {
@@ -140,7 +149,6 @@
     .login:hover::before {
         opacity: 1;
     }
-    
 
 .index-logo {
     width: 368px;
@@ -348,6 +356,130 @@
     clear: both;
     width: 100%;
 }
+
+
+/*Стили внутренней станицы*/
+
+.inner-page-title {
+    margin-bottom: 55px;
+}
+
+.inner-page-title h1 {
+    margin: 0;
+    margin-bottom: 20px;
+    padding: 0;
+
+    font-size: 30px;
+    line-height: 42px;
+}
+
+.breadcrumbs {
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+}
+
+.breadcrumbs a {
+    color: #000;
+    text-decoration: none;
+}
+
+.breadcrumbs a:hover {
+    text-decoration: underline;
+}
+
+.breadcrumbs li {
+    position: relative;
+
+    display: inline;
+    padding-right: 40px;
+}
+
+.breadcrumbs li::after {
+    content: "";
+    position: absolute;
+    top: 5px;
+    right: 14px;
+
+    width: 8px;
+    height: 8px;
+    transform: rotate(45deg);
+
+    background-color: #000;
+}
+
+    .breadcrumbs .current {
+        color: #aba9a7
+    }
+
+    .breadcrumbs .current::after {
+        display: none;
+    }
+
+.inner-content {
+    margin-bottom: 75px;
+}
+
+.inner-content h2 {
+    margin-top: 60px;
+    margin-bottom: 30px;
+
+    font-size: 24px;
+    line-height: 30px;
+}
+
+.inner-content h2 + h3 {
+    margin-bottom: 30px;
+}
+
+.inner-content p {
+    font-size: 14px;
+    line-height: 24px;
+
+    margin: 14px 0;
+}
+
+.inner-content table {
+    border-collapse: collapse;
+}
+
+.inner-content td {
+    padding: 10px 15px;
+    border: 2px solid #000;
+}
+
+.inner-content .big-heading {
+    margin-top: 55px;
+    margin-bottom: 65px;
+    text-align: center;
+}
+
+.big-heading h2 {
+    position: relative;
+    z-index: 2;
+
+    font-size: 48px;
+    line-height: 48px;
+    text-align: center;
+
+    display: inline-block;
+    margin: 0;
+    padding: 0 25px;
+
+    background: #faf7f4 url("..img/pattern-white.jpg") repeat;
+}
+
+.big-heading::after {
+    content: "";
+    position: relative;
+    top: -25px;
+    z-index: 1;
+
+    display: block;
+    border-bottom: 2px solid #000;
+}
+
 
 .main-footer {
     margin-top: 65px;
