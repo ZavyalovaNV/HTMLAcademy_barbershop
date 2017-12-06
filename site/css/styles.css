@@ -480,6 +480,76 @@
     border-bottom: 2px solid #000;
 }
 
+.custom-list-1 {
+    margin: 14px 0;
+    padding: 0;
+
+    list-style: none;
+}
+
+.custom-list-1 li {
+    position: relative;
+
+    margin-bottom: 15px;
+    padding-left: 20px;
+}
+
+.custom-list-1 li::before {
+    content: "";
+
+    position: absolute;
+    top: 9px;
+    left: 0;
+
+    width: 8px;
+    height: 8px;
+
+    background-color: #000;
+    transform: rotate(45deg);
+}
+
+.prices-table {
+    width: 100%;
+}
+
+.prices-table td {
+    width: 50%;
+}
+
+.prices-table td:last-child {
+    text-align: center;
+}
+
+.inner-columns {
+    margin: 60px 0;
+}
+
+.inner-column-left,
+.inner-column-right {
+    width: 460px;
+}
+
+.inner-column-left {
+    float: left;
+}
+
+.inner-column-right {
+    float: right;
+}
+
+    .inner-column-left *:first-child,
+    .inner-column-right *:first-child {
+        margin-top: 0;
+    }
+
+    .inner-column-left *:last-child,
+    .inner-column-right *:last-child {
+        margin-bottom: 0;
+    }
+
+.short-text {
+    padding-right: 80px;
+}
 
 .main-footer {
     margin-top: 65px;
@@ -487,6 +557,7 @@
     padding-bottom: 40px;
     color: #fff;
     background: #252525 url("img/pattern-black.jpg");
+    box-shadow: inset 0px 30px 40px -15px #000;
 }
 
 .footer-contacts {
